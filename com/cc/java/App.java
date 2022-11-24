@@ -38,9 +38,7 @@ public class App {
             ep2 = new Employee[ ea2.length ];
 
             for ( int i = 0; i <= ea2.length - 1; i++ ) {
-                for ( int j = 0; j <= ea2[ i ].length - 1; j++ ) {
-                    ep2[ i ] = new Employee( ea2[ i ][ 0 ], ea2[ i ][ 1 ], ea2[ i ][ 2 ], ea2[ i ][ 3 ] );
-                }
+                ep2[ i ] = new Employee( ea2[ i ][ 0 ], ea2[ i ][ 1 ], ea2[ i ][ 2 ], ea2[ i ][ 3 ] );
                 output( "\t" + c( "#c" ) + ep2[ i ].getInfo( "#eFN" ) + " " + ep2[ i ].getInfo( "#eLN" ) + c( "#b" ) + " (" + c( "#p" ) + ep2[ i ].getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + " --> " + c( "#g" ) + ep2[ i ].getInfo( "#eRL" ) );
             }
 
