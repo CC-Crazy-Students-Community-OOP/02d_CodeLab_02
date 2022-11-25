@@ -30,7 +30,7 @@ public class App {
             String[] ea2[] = {
                 { "Goe", "Jade", "Employee", "2011" },
                 { "Hoe", "Jaco", "Engineering", "2013" },
-                { "Koe", "Jace", "Service", "2015" }
+                { "Koe", "Jace", "Service", "2015", "" }
             };
 
             Employee[] ep2;
@@ -39,27 +39,6 @@ public class App {
             for ( int i = 0; i <= ea2.length - 1; i++ ) {
                 ep2[ i ] = new Employee( ea2[ i ][ 0 ], ea2[ i ][ 1 ], ea2[ i ][ 2 ], ea2[ i ][ 3 ] );
                 output( "\t" + c( "#c" ) + ep2[ i ].getInfo( "#eFN" ) + " " + ep2[ i ].getInfo( "#eLN" ) + c( "#b" ) + " (" + c( "#p" ) + ep2[ i ].getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + " --> " + c( "#g" ) + ep2[ i ].getInfo( "#eRL" ) );
-            }
-
-        /************************************************************/
-        /*******   Beispiel 03 voll automatisiert per Array   *******/
-        /************************************************************/
-            output( "\n" + c( "#y" ) + "---" + c( "#r" ) + "Example 3" + c( "#y" ) + "---------------------" );
-            
-            String[] ea3[] = {
-                { "Moe", "Jude", "Employee", "2017" },
-                { "Noe", "Joel", "Employee", "2019" },
-                { "Poe", "Juce", "Employee", "2021" }
-            };
-            
-            Employee[] ep3;
-            ep3 = new Employee[ ea3.length ];
-
-            for ( int i = 0; i <= ea3.length - 1; i++ ) {
-                for ( int j = 0; j <= ea3[ i ].length - 1; j++ ) {
-                    ep3[ i ] = new Employee( ea3[ i ][ 0 ], ea3[ i ][ 1 ], ea3[ i ][ 2 ], ea3[ i ][ 3 ] );
-                }
-                output( "\t" + c( "#c" ) + ep3[ i ].getInfo( "#eFN" ) + " " + ep3[ i ].getInfo( "#eLN" ) + c( "#b" ) + " (" + c( "#p" ) + ep3[ i ].getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + " --> " + c( "#g" ) + ep3[ i ].getInfo( "#eRL" ) );
             }
     
         /************************************************************/
