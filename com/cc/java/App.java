@@ -15,13 +15,7 @@ public class App {
                 output( "\t" + c( "#c" ) + e2.getInfo( "#eFN" ) + " " + e2.getInfo( "#eLN" )  + c( "#b" ) + " (" + c( "#p" ) + e2.getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + " --> " + c( "#g" ) + e2.getInfo( "#eRL" ) );
 
             Employee e3 = new Employee( "Foe", "Jack", "Service", "2009"  );
-                output( 
-                    "\t" + 
-                    c( "#c" ) + e3.getInfo( "#eFN" ) + " " + e3.getInfo( "#eLN" )  + 
-                    c( "#b" ) + " (" + c( "#p" ) + e3.getInfo( "#eEY" ) + c( "#b" ) + ")" +
-                    c( "#b" ) + " --> " + 
-                    c( "#g" ) + e3.getInfo( "#eRL" ) 
-                );
+                output( "\t" + c( "#c" ) + e3.getInfo( "#eFN" ) + " " + e3.getInfo( "#eLN" )  + c( "#b" ) + " (" + c( "#p" ) + e3.getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + " --> " + c( "#g" ) + e3.getInfo( "#eRL" ) );
 
         /************************************************************/
         /*******       Beispiel 02 Arrays und Schleifen       *******/
