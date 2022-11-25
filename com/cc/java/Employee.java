@@ -11,10 +11,21 @@ public class Employee {
         this.eEY = eEY;
     }
 
-    public void seteLN(String eLN) { this.eLN = eLN; }
-    public void seteFN(String eFN) { this.eFN = eFN; }
-    public void seteRL(String eRL) { this.eRL = eRL; }
-    public void seteEY(String eEY) { this.eEY = eEY; }
+    public void seteLN( String eLN ) { this.eLN = eLN; }
+    public void seteFN( String eFN ) { this.eFN = eFN; }
+    public void seteRL( String eRL ) { this.eRL = eRL; }
+    public void seteEY( String eEY ) { this.eEY = eEY; }
+    public String setInfo( int sI1, String sI2 ) {
+        switch ( sI1 ) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+                return sI2;
+            default:
+                return sI2;
+        }
+    }
 
     public String getInfo( String gI ) {
         switch ( gI ) {
@@ -28,17 +39,6 @@ public class Employee {
                 return eRL;
             default:
                 return "no correct input info";
-        }
-    }
-    public String setInfo( int sI1, String sI2 ) {
-        switch ( sI1 ) {
-            case 0:
-            case 1:
-            case 2:
-            case 3:
-                return sI2;
-            default:
-                return sI2;
         }
     }
 }
