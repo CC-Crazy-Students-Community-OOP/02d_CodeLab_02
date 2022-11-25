@@ -9,7 +9,12 @@ public class App {
             output( c( "#y" ) + "---" + c( "#r" ) + "Example 1" + c( "#y" ) + "---------------------" );
 
             Employee e1 = new Employee( "Boe", "Jane", "Employee", "2005"  );
-                output( "\t" + c( "#c" ) + e1.getInfo( "#eFN" ) + " " + e1.getInfo( "#eLN" )  + c( "#b" ) + " (" + c( "#p" ) + e1.getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + " --> " + c( "#g" ) + e1.getInfo( "#eRL" ) );
+                output( "\t" + c( "#c" ) + 
+                e1.getInfo( "#eFN" ) + " " + e1.getInfo( "#eLN" )  + c( "#b" ) + 
+                " (" + c( "#p" ) + e1.getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + 
+                " --> " + c( "#g" ) + 
+                e1.getInfo( "#eRL" ) 
+            );
 
             Employee e2 = new Employee( "Doe", "John", "Management", "2007"  );
                 output( "\t" + c( "#c" ) + e2.getInfo( "#eFN" ) + " " + e2.getInfo( "#eLN" )  + c( "#b" ) + " (" + c( "#p" ) + e2.getInfo( "#eEY" ) + c( "#b" ) + ")" +c( "#b" ) + " --> " + c( "#g" ) + e2.getInfo( "#eRL" ) );
